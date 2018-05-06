@@ -8,6 +8,12 @@ public class HomeController {
 
     @GetMapping(value = "home")
     public String hello() {
-        return "van dung hello";
+        return "van dung hello edited";
+    }
+
+
+    @GetMapping(value = "private")
+    public String manage() {
+        return "this is for private";
     }
 }
